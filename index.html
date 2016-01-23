@@ -245,29 +245,27 @@
       </div>
       <div class="reservation-block-form col-6-tablet">
         <div class="text-center">
-          <h2>Just the right food</h2>
+          <h2>Restaurant check-in</h2>
           <p>
-            If you've been to one of our restaurants, you've seen - and tasted - what keeps our customers coming back for more. Perfect materials and freshly baked food
+            If you would like to help homeless shelters, you can check in the amount of food left in your restaurant here
           </p>
         </div>
-        <form action="/" method="POST">
-        <input type="text" name="name" placeholder="Restaurant name" class="form-control"><br><br>
-        <input type="text" name="address" placeholder="Address" class="form-control"><br><br>
-        <input type="text" name="food" placeholder="Type of food" class="form-control"><br><br>
-        <input type="text" name="people" placeholder="How many people can it feed?" class="form-control"><br><br>
   
-
-  <input type="Submit" value="Submit" class="btn btn-primary">
-
-
-
         <form class="reservations-form">
           <fieldset>
             <legend class="sr">Contact Us</legend>
             <div class="clear">
               <div class="col-6-tablet field-group">
-                <label class="block strong" for="name">Resaurant name</label>
-                <input name="name" class="field form-control" id="name" type="text" placeholder="restaurant name *">
+                <label class="block strong" for="name">Your name</label>
+                <input name="name" class="field form-control" id="name" type="text" placeholder="your name *">
+              </div>
+              <div class="col-6-tablet field-group">
+                <label class="block strong" for="number">Phone number</label>
+                <input name="number" class="field form-control" id="number" type="text" placeholder="phone number *">
+              </div>
+              <div class="col-6-tablet field-group">
+                <label class="block strong" for="restaurant-name">Resaurant name</label>
+                <input name="restaurant-name" class="field form-control" id="restaurant-name" type="text" placeholder="restaurant name *">
               </div>
               <div class="col-6-tablet field-group">
                 <label class="block strong" for="address">Address</label>
@@ -280,7 +278,7 @@
                 <input name="food" class="field form-control" id="food" type="text" placeholder="type of food *">
               </div>
               <div class="col-6-tablet field-group">
-                <label class="block strong" for="amount">Number of people it can feed</label>
+                <label class="block strong" for="amount">Number of people to feed</label>
                 <span class="select">
                   <select name="amount" id="amount">
                     <option value="1">1</option>

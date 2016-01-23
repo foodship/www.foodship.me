@@ -250,31 +250,47 @@
             If you've been to one of our restaurants, you've seen - and tasted - what keeps our customers coming back for more. Perfect materials and freshly baked food
           </p>
         </div>
+        <form action="/" method="POST">
+        <input type="text" name="name" placeholder="Restaurant name" class="form-control"><br><br>
+        <input type="text" name="address" placeholder="Address" class="form-control"><br><br>
+        <input type="text" name="food" placeholder="Type of food" class="form-control"><br><br>
+        <input type="text" name="people" placeholder="How many people can it feed?" class="form-control"><br><br>
+  
+
+  <input type="Submit" value="Submit" class="btn btn-primary">
+
+
+
         <form class="reservations-form">
           <fieldset>
             <legend class="sr">Contact Us</legend>
             <div class="clear">
               <div class="col-6-tablet field-group">
-                <label class="block strong" for="name">Name</label>
-                <input name="full-name" class="field" id="name" type="text" placeholder="your name *">
+                <label class="block strong" for="name">Resaurant name</label>
+                <input name="name" class="field form-control" id="name" type="text" placeholder="restaurant name *">
               </div>
               <div class="col-6-tablet field-group">
-                <label class="block strong" for="email">Email</label>
-                <input name="email" class="field" id="email" type="email" placeholder="your email *">
+                <label class="block strong" for="address">Address</label>
+                <input name="address" class="field form-control" id="address" type="text" placeholder="restaurant address *">
               </div>
             </div>
             <div class="clear">
               <div class="col-6-tablet field-group">
-                <label class="block strong" for="date">Date</label>
-                <input name="date-of-booking" class="field" id="date" type="text" placeholder="date *">
+                <label class="block strong" for="food">Type of food</label>
+                <input name="food" class="field form-control" id="food" type="text" placeholder="type of food *">
               </div>
               <div class="col-6-tablet field-group">
-                <label class="block strong" for="party-size">Party size</label>
+                <label class="block strong" for="amount">Number of people it can feed</label>
                 <span class="select">
-                  <select name="party-size" id="party-size">
+                  <select name="amount" id="amount">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
                   </select>
                 </span>
               </div>

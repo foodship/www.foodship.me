@@ -46,8 +46,7 @@ curl_setopt_array($curl, array(
   CURLOPT_HTTPHEADER => array(
     "authorization: Basic MGI1ODYyNjItNjQ4OS00Y2U4LTlhMzUtYmU4ZmIwZTc0NTE2Og==",
     "cache-control: no-cache",
-    "content-type: multipart/form-data; boundary=---011000010111000001101001",
-    "postman-token: d9d50115-70f4-4124-f48b-27a56a2df83e"
+    "content-type: multipart/form-data; boundary=---011000010111000001101001"
   ),
 ));
 

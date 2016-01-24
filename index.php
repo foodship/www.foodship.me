@@ -182,7 +182,7 @@ function pass_id() {
 			</li>
 			<li>
 				<label for="address">Address</label>
-				<input id="email" name="email" type="email" placeholder="example@domain.com" required="">
+				<input id="email" name="email" type="text" placeholder="example@domain.com" required="">
 			</li>
 			<li>
 				<label for="phone">Phone</label>

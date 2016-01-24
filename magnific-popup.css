@@ -400,3 +400,6 @@ img.mfp-img {
     margin: 40px auto;
     position: relative;
 }
+.white-popup-block h1 {
+  color: #282B30;
+}

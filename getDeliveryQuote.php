@@ -2,6 +2,11 @@
 echo "start";
 require "makeDelivery.php";
 
+$dropoff_address = $_POST['address'];
+$dropoff_name = $_POST['name'];
+$dropoff_phone = $_POST['phone'];
+
+
  $servername = "sql.foodship.me";
           $username = "foodship";
           $password = "djmingudjmingu";
@@ -41,7 +46,7 @@ curl_setopt_array($curl, array(
   CURLOPT_TIMEOUT => 30,
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => "POST",
-  CURLOPT_POSTFIELDS => "-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"pickup_address\"\r\n\r\n $address \r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"dropoff_address\"\r\n\r\n shelter \r\n-----011000010111000001101001--",
+  CURLOPT_POSTFIELDS => "-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"pickup_address\"\r\n\r\n $address \r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"dropoff_address\"\r\n\r\n $dropoff_address \r\n-----011000010111000001101001--",
   CURLOPT_HTTPHEADER => array(
     "authorization: Basic MGI1ODYyNjItNjQ4OS00Y2U4LTlhMzUtYmU4ZmIwZTc0NTE2Og==",
     "cache-control: no-cache",
@@ -61,4 +66,4 @@ if ($err) {
   echo $response;
 }
 
-deliver();
+deliver($dropoff_address, $dropoff_name, $dropoff_name);

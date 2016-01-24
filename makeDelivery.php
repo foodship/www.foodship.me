@@ -1,5 +1,5 @@
 <?php
-function deliver(){
+function deliver($dropoff_address, $dropoff_name, $dropoff_phone_number){
 	echo "start";
 	 $servername = "sql.foodship.me";
 	          $username = "foodship";
@@ -40,7 +40,9 @@ curl_setopt_array($curl, array(
   CURLOPT_TIMEOUT => 30,
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => "POST",
-  CURLOPT_POSTFIELDS => "-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"pickup_address\"\r\n\r\n $address \r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"pickup_phone_number\"\r\n\r\n $number \r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"pickup_name\"\r\n\r\n $name \r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"dropoff_address\"\r\n\r\n3910 Irving St, Philadelphia, PA 19104\r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"manifest\"\r\n\r\nTests\r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"dropoff_phone_number\"\r\n\r\n415-445-4444\r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"dropoff_name\"\r\n\r\nDeliverer\r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"quote_id\"\r\n\r\ndqt_KeEkr3G_TOt0vV\r\n-----011000010111000001101001--",
+  CURLOPT_POSTFIELDS => "-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"pickup_address\"\r\n\r\n $address \r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"pickup_phone_number\"\r\n\r\n $number 
+  \r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"pickup_name\"\r\n\r\n $name \r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"dropoff_address\"\r\n\r\n $dropoff_address \r\n-----011000010111000001101001
+  \r\nContent-Disposition: form-data; name=\"dropoff_phone_number\"\r\n\r\n $dropoff_phone_number \r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"dropoff_name\"\r\n\r\n $dropoff_name\r\n-----011000010111000001101001--",
   CURLOPT_HTTPHEADER => array(
     "authorization: Basic MGI1ODYyNjItNjQ4OS00Y2U4LTlhMzUtYmU4ZmIwZTc0NTE2Og==",
     "cache-control: no-cache",

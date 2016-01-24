@@ -38,6 +38,13 @@ $conn->close();
 
 $curl = curl_init();
 
+echo $address;
+echo $dropoff_address;
+echo $number;
+echo $name;
+echo $dropoff_name;
+echo $dropoff_phone;
+
 curl_setopt_array($curl, array(
   CURLOPT_URL => "https://api.postmates.com/v1/customers/cus_KeDc-a3WqAD2rk/delivery_quotes",
   CURLOPT_RETURNTRANSFER => true,
@@ -46,7 +53,7 @@ curl_setopt_array($curl, array(
   CURLOPT_TIMEOUT => 30,
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => "POST",
-  CURLOPT_POSTFIELDS => "-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"pickup_address\"\r\n\r\n $address \r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"dropoff_address\"\r\n\r\n $dropoff_address \r\n-----011000010111000001101001--",
+  CURLOPT_POSTFIELDS => "-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"pickup_address\"\r\n\r\n" . $address . "\r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"dropoff_address\"\r\n\r\n" . $dropoff_address . "\r\n-----011000010111000001101001--",
   CURLOPT_HTTPHEADER => array(
     "authorization: Basic MGI1ODYyNjItNjQ4OS00Y2U4LTlhMzUtYmU4ZmIwZTc0NTE2Og==",
     "cache-control: no-cache",

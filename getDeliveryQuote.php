@@ -31,33 +31,34 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 
-$request = new HttpRequest();
-$request->setUrl('https://api.postmates.com/v1/customers/cus_KeDc-a3WqAD2rk/delivery_quotes');
-$request->setMethod(HTTP_METH_POST);
+$curl = curl_init();
 
-$request->setHeaders(array(
-  'postman-token' => 'f01e9d50-ba6f-a0f9-7448-d339787ba0f6',
-  'cache-control' => 'no-cache',
-  'authorization' => 'Basic MGI1ODYyNjItNjQ4OS00Y2U4LTlhMzUtYmU4ZmIwZTc0NTE2Og==',
-  'content-type' => 'multipart/form-data; boundary=---011000010111000001101001'
+curl_setopt_array($curl, array(
+  CURLOPT_URL => "https://api.postmates.com/v1/customers/cus_KeDc-a3WqAD2rk/delivery_quotes",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 30,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "POST",
+  CURLOPT_POSTFIELDS => "-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"pickup_address\"\r\n\r\n $address \r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"dropoff_address\"\r\n\r\n shelter \r\n-----011000010111000001101001--",
+  CURLOPT_HTTPHEADER => array(
+    "authorization: Basic MGI1ODYyNjItNjQ4OS00Y2U4LTlhMzUtYmU4ZmIwZTc0NTE2Og==",
+    "cache-control: no-cache",
+    "content-type: multipart/form-data; boundary=---011000010111000001101001",
+    "postman-token: fc789027-e037-894a-777b-1e9fc3314d7a"
+  ),
 ));
 
-$request->setBody('-----011000010111000001101001
-Content-Disposition: form-data; name="pickup_address"
+$response = curl_exec($curl);
+$err = curl_error($curl);
 
-$address
------011000010111000001101001
-Content-Disposition: form-data; name="dropoff_address"
+curl_close($curl);
 
-3910 Irving St, Philadelphia, PA 19104
------011000010111000001101001--');
-
-try {
-  $response = $request->send();
-
-  echo $response->getBody();
-} catch (HttpException $ex) {
-  echo $ex;
+if ($err) {
+  echo "cURL Error #:" . $err;
+} else {
+  echo $response;
 }
 
 deliver();

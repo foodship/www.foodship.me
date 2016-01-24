@@ -92,9 +92,31 @@
       <h2 class="h2-secondary">Guest Reviews</h2>
       <blockquote>
         <p>
-          If you've been to one of our restaurants, you've seen - and tasted - what keeps our customers coming back for more.
-          Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and gourmet coffees makes us hard to resist!
-          Stop in today and check us out!
+          <?php
+          $servername = "sql.foodship.me";
+          $username = "foodship";
+          $password = "djmingudjmingu";
+          $dbname = "foodship";
+          
+$conn = new mysqli($servername, $username, $password, $dbname);
+          if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+$sql = "SELECT * 
+FROM  `restaurants` 
+LIMIT 0 , 10";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+      print_r($row);
+        // echo $row["Id"]. " - Name: " . $row["Name"]. ", Restaurant: " . $row["Restaurant-name"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
+?>
         </p>
         <cite>
           food inc, New York

@@ -77,5 +77,6 @@ function deliver(){
 	} catch (HttpException $ex) {
 	  echo $ex;
 	}
-}
+
 echo "<h2>Your order has been processsed.</h2>"
+}

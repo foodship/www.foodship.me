@@ -297,13 +297,13 @@ function pass_id() {
 <div class="footer">
   <div class="footer-inner container">
     <div class="clear">
-      <div class="footer-column col-4-desktop">
+      <div class="footer-column col-6-desktop">
         <h3 class="footer-heading">About us</h3>
         <p>
           Foodship connects homeless shelter to restaurants donating food. With just a touch of a button, restaurants can ship food to homeless shelters to benefit those in need. No more trudging along in ankle-deep snow.
         </p>
       </div>
-      <div class="footer-column col-4-desktop">
+      <div class="footer-column col-6-desktop">
         <h3 class="footer-heading">Our Profiles</h3>
         <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
 <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/mingzhang2019" data-format="hover" data-related="false" data-text="Ming Zhang"></script>
@@ -325,6 +325,7 @@ function pass_id() {
         </ul>
       -->
       </div>
+      <!--
       <div class="footer-column col-4-desktop">
         <h3 class="footer-heading">Opening Hours</h3>
         <p>
@@ -338,6 +339,7 @@ function pass_id() {
           <li><span class="payment payment-paypal"><span class="sr">PayPal</span></span></li>
         </ul>
       </div>
+      -->
     </div>
   </div>
 </div>

@@ -184,11 +184,11 @@ function pass_id() {
 			</li>
 			<li>
 				<label for="address">Address</label>
-				<input id="address" name="address" type="text" placeholder="3910 Irving Street" required="">
+				<input id="address" name="address" type="text" placeholder="e.g. 3910 Irving Street" required="">
 			</li>
 			<li>
 				<label for="phone">Phone</label>
-				<input id="phone" name="phone" type="tel" placeholder="Eg. +447500000000" required="">
+				<input id="phone" name="phone" type="tel" placeholder="e.g. +447500000000" required="">
 			</li>
 			
 		</ol>

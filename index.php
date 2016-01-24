@@ -55,7 +55,7 @@
     </h1>
     <div class="banner-buttons">
       <a href="#shelter" class="button button-primary">I'm a homeless shelter</a>
-      <a href="#restaurant" class="button button-secondary">I'm a restaurant</a>
+      <a href="#restaurant" class="button button-primary">I'm a restaurant</a>
     </div>
   </div>
 </div>

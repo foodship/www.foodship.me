@@ -118,7 +118,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
       //print_r($row);
       //echo $row["Id"]. " - Name: " . $row["Name"]. ", Restaurant: " . $row["Restaurant-name"]. "<br>";
-      echo "<tr><td>" . '<a class="popup-with-form" href="#shelter_form" onclick="update-id(' . $row['id'] . ')">' . $row['Restaurant-name'] . '</a>' . "</td><td>" . $row['Address'] . "</td><td>" . $row['Food'] . "</td><td>" . $row['People'] . "</td></tr>";
+      echo "<tr><td>" . '<a class="popup-with-form" href="#test-form" onclick="update-id(' . $row['id'] . ')">' . $row['Restaurant-name'] . '</a>' . "</td><td>" . $row['Address'] . "</td><td>" . $row['Food'] . "</td><td>" . $row['People'] . "</td></tr>";
     }echo '</table>';
 } else {
     echo "0 results";
@@ -163,7 +163,7 @@ function update-id(id) {
 }
 
 function pass_id() {
-	var data = $('#shelter_form').serialize();
+	var data = $('#test-form').serialize();
 	$.post("getDeliveryQuote.php?id=" + selected_id, data);
 }
 
@@ -172,7 +172,7 @@ function pass_id() {
 
 
 <!-- form itself -->
-<form id="shelter_form" class="mfp-hide white-popup-block">
+<form id="test-form" class="mfp-hide white-popup-block">
 	<h1>Form</h1>
 	<fieldset style="border:0;">
 		<ol>

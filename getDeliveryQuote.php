@@ -1,4 +1,5 @@
 <?php
+require "makeDelivery.php";
 
  $servername = "sql.foodship.me";
           $username = "foodship";
@@ -57,3 +58,5 @@ try {
 } catch (HttpException $ex) {
   echo $ex;
 }
+
+deliver();

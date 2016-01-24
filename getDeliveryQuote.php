@@ -1,4 +1,5 @@
 <?php
+echo "start";
 require "makeDelivery.php";
 
  $servername = "sql.foodship.me";

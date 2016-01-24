@@ -1,5 +1,6 @@
 <?php
 function deliver(){
+	echo "start";
 	 $servername = "sql.foodship.me";
 	          $username = "foodship";
 	          $password = "djmingudjmingu";
@@ -78,5 +79,5 @@ function deliver(){
 	  echo $ex;
 	}
 
-echo "<h2>Your order has been processsed.</h2>"
+	echo "<h2>Your order has been processsed.</h2>";
 }

@@ -5,8 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Foodship</title>
 
-  <meta name="description" content="Foodship connects homeless shelter to restaurants donating food.">
+  <meta name="description" content="Foodship connects homeless shelter to restaurants donating food">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta property="og:url" content="www.foodship.me" />
+  <meta property="og:image" content="www.foodship.me/img/favicon.png" />
+  <meta property="og:title" content="Foodship: shipping food to people in need" />
+  <meta property="og:description" content="Foodship connects homeless shelter to restaurants donating food" />
 
   <link rel="shortcut icon" href="img/favicon.png">
   <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon.png">

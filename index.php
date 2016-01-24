@@ -182,7 +182,7 @@ function pass_id() {
 			</li>
 			<li>
 				<label for="address">Address</label>
-				<input id="email" name="email" type="text" placeholder="example@domain.com" required="">
+				<input id="address" name="address" type="text" placeholder="3910 Irving Street" required="">
 			</li>
 			<li>
 				<label for="phone">Phone</label>
@@ -190,7 +190,7 @@ function pass_id() {
 			</li>
 			
 		</ol>
-		 <input type="submit" class="button reservations-submit" onclick="pass_id()" value="Register">
+		 <button class="button reservations-submit" onclick="pass_id()" value="Register"/>
 	</fieldset>
 </form>
 

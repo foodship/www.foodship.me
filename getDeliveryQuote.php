@@ -63,7 +63,7 @@ curl_close($curl);
 if ($err) {
   echo "cURL Error #:" . $err;
 } else {
-  $results = json_decode($response);
+  $results = json_decode($response, true);
   echo $results["dropoff_eta"];
   //echo $response;
 }

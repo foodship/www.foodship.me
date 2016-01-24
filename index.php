@@ -118,7 +118,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
       //print_r($row);
       //echo $row["Id"]. " - Name: " . $row["Name"]. ", Restaurant: " . $row["Restaurant-name"]. "<br>";
-      echo "<tr><td>" . '<a class="popup-with-form" href="#test-form" onclick="update_id(' . $row['id'] . ')">' . $row['Restaurant-name'] . '</a>' . "</td><td>" . $row['Address'] . "</td><td>" . $row['Food'] . "</td><td>" . $row['People'] . "</td></tr>";
+      echo "<tr><td>" . '<a class="popup-with-form" href="#test-form" onclick="update_id(' . $row['Id'] . ')">' . $row['Restaurant-name'] . '</a>' . "</td><td>" . $row['Address'] . "</td><td>" . $row['Food'] . "</td><td>" . $row['People'] . "</td></tr>";
     }echo '</table>';
 } else {
     echo "0 results";

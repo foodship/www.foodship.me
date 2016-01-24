@@ -78,3 +78,4 @@ function deliver(){
 	  echo $ex;
 	}
 }
+echo "<h2>Your order has been processsed.</h2>"

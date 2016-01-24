@@ -89,7 +89,7 @@
 <div id="shelter" class="content-block reviews-block">
   <div class="reviews-block-inner container">
     <div class="feature-box text-center col-12-tablet col-8-desktop no-float center-element">
-      <h2 class="h2-secondary">Guest Reviews</h2>
+      <h2 class="h2-secondary">Restaurants:</h2>
       <blockquote>
         <p>
           <?php
@@ -108,10 +108,14 @@ LIMIT 0 , 10";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
+  echo '<table style="width:100%">
+  <tr><td>Name</td><td>Location</td><td>Food</td><td>Servings</td></tr>';
+  
     while($row = $result->fetch_assoc()) {
-      print_r($row);
-        // echo $row["Id"]. " - Name: " . $row["Name"]. ", Restaurant: " . $row["Restaurant-name"]. "<br>";
-    }
+      //print_r($row);
+      //echo $row["Id"]. " - Name: " . $row["Name"]. ", Restaurant: " . $row["Restaurant-name"]. "<br>";
+      echo "<tr><td>$row['Restaurant-name']</td><td>$row['Address']</td><td>$row['Food']</td><td>$row['People']</td></tr>";
+    }echo '</table>';
 } else {
     echo "0 results";
 }

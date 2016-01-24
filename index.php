@@ -147,7 +147,7 @@
 `People`
 )
 VALUES (
-NULL , $name, $number, $restaurant_name, $address, $food, $people";
+NULL , '$name', '$number', '$restaurant_name', '$address', '$food', '$people')";
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
 } else {

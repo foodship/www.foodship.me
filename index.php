@@ -122,8 +122,8 @@
             If you would like to help homeless shelters, you can check in the amount of food left in your restaurant here
           </p>
         </div>
-  
-        <form class="reservations-form">
+        <?php echo '
+        <form action="/" method="post" class="reservations-form">
           <fieldset>
             <legend class="sr">Contact Us</legend>
             <div class="clear">
@@ -170,6 +170,7 @@
             </div>
           </fieldset>
         </form>
+        ' ?>
       </div>
     </div>
   </div>

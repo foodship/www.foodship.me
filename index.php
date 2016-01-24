@@ -122,7 +122,40 @@
             If you would like to help homeless shelters, you can check in the amount of food left in your restaurant here
           </p>
         </div>
-        <?php if ($_POST) { echo '<p> Thank you!</p>'; } else { echo '
+        <?php if ($_POST) {
+          $servername = "sql.foodship.me";
+          $username = "foodship";
+          $password = "djmingudjmingu";
+          $dbname = "foodship";
+          $name = $_POST['name'];
+          $number = $_POST['number'];
+          $restaurant_name = $_POST['restaurant-name'];
+          $address = $_POST['address'];
+          $food = $_POST['food'];
+          $people = $_POST['amount'];
+          $conn = new mysqli($servername, $username, $password, $dbname);
+          if ($conn->connect_error) {
+              die("Connection failed: " . $conn->connect_error);
+          } 
+
+          $sql = "INSERT INTO  `foodship`.`restaurants` (`Id` ,
+`Name` ,
+`Number` ,
+`Restaurant-name` ,
+`Address` ,
+`Food` ,
+`People`
+)
+VALUES (
+NULL , $name, $number, $restaurant_name, $address, $food, $people";
+if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+        echo '<p> Thank you!</p>'; } else { echo '
         <form action="/#restaurant" method="post" class="reservations-form">
           <fieldset>
             <legend class="sr">Contact Us</legend>

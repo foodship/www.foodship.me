@@ -38,17 +38,19 @@
           <li class="navigation-item"><a href="#shelter">For shelters</a></li>
           <li class="navigation-item"><a href="#restaurant">For restaurants</a></li>
         </ul>
+        <!--
         <ul class="navigation-social">
           <li class="navigation-item-social"><a class="social social-twitter" href="#"><span class="sr">Twitter</span></a></li>
           <li class="navigation-item-social"><a class="social social-facebook" href="#"><span class="sr">Facebook</span></a></li>
           <li class="navigation-item-social"><a class="social social-google-plus" href="#"><span class="sr">Google Plus</span></a></li>
         </ul>
+        -->
       </div>
     </div>
   </div>
   <div class="banner-inner container">
     <h1 class="banner-lead">
-      <span class="banner-lead-1">shipping the food</span>
+      <span class="banner-lead-1">shipping food</span>
       <span class="banner-lead-2">to people in need</span>
     </h1>
     <div class="banner-buttons">
@@ -67,7 +69,7 @@
           <li class="food-menu-item">
             <div class="food-menu-summary">
               <p>
-                We are first-year computer science majors at the University of Pennsylvania.
+                We are four Freshmen majoring in Computer Science at the University of Pennsylvania. This is our second time participating in a hackathon.
               </p>
             </div>
           </li>
@@ -79,7 +81,7 @@
           <li class="food-menu-item">
             <div class="food-menu-summary">
               <p>
-                Foodship connects restaurants to homeless shelters.
+                Foodship connects homeless shelter to restaurants donating food. With just a touch of a button, restaurants can ship food to homeless shelters to benefit those in need. No more trudging along in ankle-deep snow.
               </p>
             </div>
           </li>
@@ -298,8 +300,7 @@ function pass_id() {
       <div class="footer-column col-4-desktop">
         <h3 class="footer-heading">About us</h3>
         <p>
-          Lambda's new and expanded Chelsea location represents a truly <strong>authentic</strong> Greek
-          patisserie, featuring breakfasts of fresh croissants and steaming bowls of caf&eacute;.
+          Foodship connects homeless shelter to restaurants donating food. With just a touch of a button, restaurants can ship food to homeless shelters to benefit those in need. No more trudging along in ankle-deep snow.
         </p>
       </div>
       <div class="footer-column col-4-desktop">
@@ -316,17 +317,26 @@ function pass_id() {
         </ul>
       </div>
       <div class="footer-column col-4-desktop">
-        <h3 class="footer-heading">Our Location</h3>
-        <p>
-          19th Paradise Street Sitia <br>
-          128 Meserole Avenue
-        </p>
+        <h3 class="footer-heading">Our Profiles</h3>
+        <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/mingzhang2019" data-format="hover" data-related="false" data-text="Ming Zhang"></script>
+        <br>
+        <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/sanjanasarkar" data-format="hover" data-related="false" data-text="Sanjana Sarkar"></script>
+        <br>
+        <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/abha-vedula-263726111" data-format="hover" data-related="false" data-text="Abha Vedula"></script>
+        <br>
+        <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/victoria-huang-7804a7113" data-format="hover" data-related="false" data-text="Victoria Huang"></script>
+      <!--
         <ul class="footer-social-list icon-list-inline">
           <li class="navigation-item-social"><a class="social social-twitter" href="#"><span class="sr">Twitter</span></a></li>
           <li class="navigation-item-social"><a class="social social-facebook" href="#"><span class="sr">Facebook</span></a></li>
           <li class="navigation-item-social"><a class="social social-google-plus" href="#"><span class="sr">Google Plus</span></a></li>
           <li class="navigation-item-social"><a class="social social-youtube" href="#"><span class="sr">YouTube</span></a></li>
         </ul>
+      -->
       </div>
     </div>
   </div>

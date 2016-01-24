@@ -190,7 +190,7 @@ function pass_id() {
 			</li>
 			
 		</ol>
-		 <input type="submit" class="button reservations-submit" value="Register">
+		 <input type="submit" class="button reservations-submit" onclick="pass_id()" value="Register">
 	</fieldset>
 </form>
 

@@ -152,15 +152,29 @@ $conn->close();
 			}
 		}
 	});
-});</script>
+});
+
+var selected_id;
+
+function update-id(id) {
+	selected_id = id;
+	
+	
+}
+
+function pass_id() {
+	var data = $('#shelter_form').serialize();
+	$.post("getDeliveryQuote.php?id=" + selected_id, data);
+}
+
+</script>
 
 
 
 <!-- form itself -->
-<form id="test-form" class="mfp-hide white-popup-block">
+<form id="shelter_form" class="mfp-hide white-popup-block">
 	<h1>Form</h1>
 	<fieldset style="border:0;">
-		
 		<ol>
 			<li>
 				<label for="name">Name</label>
@@ -176,6 +190,7 @@ $conn->close();
 			</li>
 			
 		</ol>
+		 <input type="submit" class="button reservations-submit" value="Register">
 	</fieldset>
 </form>
 

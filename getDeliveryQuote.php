@@ -38,14 +38,6 @@ $conn->close();
 
 $curl = curl_init();
 
-echo $_GET['id'];
-echo $address;
-echo $dropoff_address;
-echo $number;
-echo $name;
-echo $dropoff_name;
-echo $dropoff_phone;
-
 curl_setopt_array($curl, array(
   CURLOPT_URL => "https://api.postmates.com/v1/customers/cus_KeDc-a3WqAD2rk/delivery_quotes",
   CURLOPT_RETURNTRANSFER => true,

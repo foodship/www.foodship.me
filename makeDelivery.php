@@ -55,5 +55,5 @@ $response = curl_exec($curl);
 $err = curl_error($curl);
 
 
-	echo "<h2>Your order has been processsed.</h2>";
+	//echo "<h2>Your order has been processsed.</h2>";
 }

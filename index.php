@@ -58,7 +58,7 @@
   </div>
 </div>
 
-<div id="menu" class="content-block food-menu-block">
+<div id="about" class="content-block food-menu-block">
   <div class="food-menu-block-inner container">
     <div class="clear">
       <div class="food-menu-content">

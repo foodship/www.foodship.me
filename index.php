@@ -160,7 +160,7 @@ $conn->close();
 <form id="test-form" class="mfp-hide white-popup-block">
 	<h1>Form</h1>
 	<fieldset style="border:0;">
-		<p>Lightbox has an option to automatically focus on the first input. It's strongly recommended to use <code>inline</code> popup type for lightboxes with form instead of <code>ajax</code> (to keep entered data if the user accidentally refreshed the page).</p>
+		
 		<ol>
 			<li>
 				<label for="name">Name</label>

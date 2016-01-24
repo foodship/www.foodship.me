@@ -64,7 +64,7 @@ if ($err) {
   echo "cURL Error #:" . $err;
 } else {
   $results = json_decode($response, true);
-  echo "Estimated Time of Arrival: " . date("h:i", strtotime($results["dropoff_eta"]));
+  echo "Estimated Time of Arrival: " . date("h:i A", strtotime($results["dropoff_eta"]));
   //echo $response;
 }
 

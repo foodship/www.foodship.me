@@ -14,6 +14,10 @@
   <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="magnific-popup/jquery.magnific-popup.js"></script>
+
 </head>
 <body>
 
@@ -89,7 +93,7 @@
 <div id="shelter" class="content-block reviews-block">
   <div class="reviews-block-inner container">
     <div class="feature-box text-center col-12-tablet col-8-desktop no-float center-element">
-      <h2 class="h2-secondary">Restaurants:</h2>
+      <h2 class="h2-secondary">Restaurants</h2>
       <blockquote>
         <p>
           <?php
@@ -110,7 +114,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   echo '<table style="width:100%">
   <tr><td>Name</td><td>Location</td><td>Food</td><td>Servings</td></tr>';
-  
+
     while($row = $result->fetch_assoc()) {
       //print_r($row);
       //echo $row["Id"]. " - Name: " . $row["Name"]. ", Restaurant: " . $row["Restaurant-name"]. "<br>";
@@ -123,7 +127,6 @@ $conn->close();
 ?>
         </p>
         <cite>
-          food inc, New York
         </cite>
       </blockquote>
     </div>

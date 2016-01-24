@@ -232,7 +232,7 @@ function pass_id() {
             die("Connection failed: " . $conn->connect_error);
           } 
           $sql = "INSERT INTO  `foodship`.`restaurants` (`Id`, `Name`, `Number`, `Restaurant-name`, `Address`, `Food`, `People`)
-          VALUES (NULL , '$name', '$number', '$restaurant_name', '$address', '$food', '$people')";
+          VALUES (NULL , '$name', '$number', '$restaurant_name', '$address', '$food', '$people', NULL)";
           if ($conn->query($sql) === TRUE) {
             echo "<p> Thank you!</p>";
           } else {

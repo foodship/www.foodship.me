@@ -38,6 +38,7 @@ $conn->close();
 
 $curl = curl_init();
 
+echo $_GET['id'];
 echo $address;
 echo $dropoff_address;
 echo $number;

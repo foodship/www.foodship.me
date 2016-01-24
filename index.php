@@ -123,7 +123,7 @@
           </p>
         </div>
         <?php if ($_POST) { echo '<p> Thank you!</p>'; } else { echo '
-        <form action="/" method="post" class="reservations-form">
+        <form action="/#restaurant" method="post" class="reservations-form">
           <fieldset>
             <legend class="sr">Contact Us</legend>
             <div class="clear">

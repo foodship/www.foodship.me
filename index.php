@@ -167,6 +167,7 @@ function pass_id() {
 	var data = $('#test-form').serialize();
 	$.post("getDeliveryQuote.php?id=" + selected_id, data).done(function (data) {
         alert(data);
+        location.reload();
     });
 }
 

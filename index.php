@@ -304,19 +304,6 @@ function pass_id() {
         </p>
       </div>
       <div class="footer-column col-4-desktop">
-        <h3 class="footer-heading">Opening Hours</h3>
-        <p>
-          <strong>Mon-Thu:</strong> 7.00am - 8.00pm <br>
-          <strong>Fri-Sun:</strong> 7.00am - 10.00pm
-        </p>
-        <ul class="payment-types icon-list-inline">
-          <li><span class="payment payment-mastercard"><span class="sr">Mastercard</span></a></li>
-          <li><span class="payment payment-visa"><span class="sr">Visa</span></span></li>
-          <li><span class="payment payment-american-express"><span class="sr">American Express</span></span></li>
-          <li><span class="payment payment-paypal"><span class="sr">PayPal</span></span></li>
-        </ul>
-      </div>
-      <div class="footer-column col-4-desktop">
         <h3 class="footer-heading">Our Profiles</h3>
         <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
 <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/mingzhang2019" data-format="hover" data-related="false" data-text="Ming Zhang"></script>
@@ -337,6 +324,19 @@ function pass_id() {
           <li class="navigation-item-social"><a class="social social-youtube" href="#"><span class="sr">YouTube</span></a></li>
         </ul>
       -->
+      </div>
+      <div class="footer-column col-4-desktop">
+        <h3 class="footer-heading">Opening Hours</h3>
+        <p>
+          <strong>Mon-Thu:</strong> 7.00am - 8.00pm <br>
+          <strong>Fri-Sun:</strong> 7.00am - 10.00pm
+        </p>
+        <ul class="payment-types icon-list-inline">
+          <li><span class="payment payment-mastercard"><span class="sr">Mastercard</span></a></li>
+          <li><span class="payment payment-visa"><span class="sr">Visa</span></span></li>
+          <li><span class="payment payment-american-express"><span class="sr">American Express</span></span></li>
+          <li><span class="payment payment-paypal"><span class="sr">PayPal</span></span></li>
+        </ul>
       </div>
     </div>
   </div>

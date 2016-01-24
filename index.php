@@ -179,7 +179,7 @@ function pass_id() {
 
 <!-- form itself -->
 <form id="test-form" class="mfp-hide white-popup-block">
-	<h1>Form</h1>
+	<h1>Shelter Information</h1>
 	<fieldset style="border:0;">
 		<ol>
 			<li>

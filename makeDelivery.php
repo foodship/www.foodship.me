@@ -54,6 +54,4 @@ curl_setopt_array($curl, array(
 $response = curl_exec($curl);
 $err = curl_error($curl);
 
-
-	echo "\nYour order has been processsed.";
 }

@@ -164,7 +164,9 @@ function update_id(id) {
 
 function pass_id() {
 	var data = $('#test-form').serialize();
-	$.post("getDeliveryQuote.php?id=" + selected_id, data);
+	$.post("getDeliveryQuote.php?id=" + selected_id, data).done(function (data) {
+        alert(data);
+    });
 }
 
 </script>

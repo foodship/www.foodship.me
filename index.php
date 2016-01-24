@@ -108,6 +108,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 }
 $sql = "SELECT * 
 FROM  `restaurants` 
+WHERE `Ordered` = 0
 LIMIT 0 , 10";
 $result = $conn->query($sql);
 

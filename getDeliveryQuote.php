@@ -14,7 +14,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 $sql = "SELECT * 
 FROM  `restaurants` 
-WHERE `Id` = $_GET['id']
+WHERE `Id` = " . $_GET['id'] . "
 LIMIT 0 , 10";
 $result = $conn->query($sql);
 $address = "";

@@ -1,6 +1,6 @@
 <?php
 function deliver($dropoff_address, $dropoff_name, $dropoff_phone_number){
-	echo "start";
+	//echo "start";
 	 $servername = "sql.foodship.me";
 	          $username = "foodship";
 	          $password = "djmingudjmingu";
@@ -26,7 +26,7 @@ function deliver($dropoff_address, $dropoff_name, $dropoff_phone_number){
 	  $number = $row['Number'];
 	  $name = $row['Name'];
 	} else {
-	    echo "0 results";
+	    //echo "0 results";
 	}
 	$conn->close();
 
@@ -55,5 +55,5 @@ $response = curl_exec($curl);
 $err = curl_error($curl);
 
 
-	//echo "<h2>Your order has been processsed.</h2>";
+	echo "Your order has been processsed.";
 }

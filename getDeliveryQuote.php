@@ -1,5 +1,5 @@
 <?php
-echo "start";
+//echo "start";
 require "makeDelivery.php";
 
 $dropoff_address = $_POST['address'];
@@ -32,7 +32,7 @@ if ($result->num_rows > 0) {
   $number = $row['Number'];
   $name = $row['Name'];
 } else {
-    echo "0 results";
+    //echo "0 results";
 }
 $conn->close();
 
@@ -63,7 +63,7 @@ curl_close($curl);
 if ($err) {
   echo "cURL Error #:" . $err;
 } else {
-  echo $response;
+  //echo $response;
 }
 
 deliver($dropoff_address, $dropoff_name, $dropoff_name);

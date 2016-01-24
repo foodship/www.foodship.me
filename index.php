@@ -149,13 +149,12 @@
 VALUES (
 NULL , '$name', '$number', '$restaurant_name', '$address', '$food', '$people')";
 if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+    echo "<p> Thank you!</p>";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-$conn->close();
-        echo '<p> Thank you!</p>'; } else { echo '
+$conn->close(); } else { echo '
         <form action="/#restaurant" method="post" class="reservations-form">
           <fieldset>
             <legend class="sr">Contact Us</legend>

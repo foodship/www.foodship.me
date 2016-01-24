@@ -125,6 +125,8 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
+<!-- link that opens popup -->
+<a class="popup-with-form" href="#test-form">Open form</a>
         </p>
         <cite>
         </cite>
@@ -153,8 +155,7 @@ $conn->close();
 	});
 });</script>
 
-<!-- link that opens popup -->
-<a class="popup-with-form" href="#test-form">Open form</a>
+
 
 <!-- form itself -->
 <form id="test-form" class="mfp-hide white-popup-block">
@@ -167,17 +168,14 @@ $conn->close();
 				<input id="name" name="name" type="text" placeholder="Name" required="">
 			</li>
 			<li>
-				<label for="email">Email</label>
+				<label for="address">Address</label>
 				<input id="email" name="email" type="email" placeholder="example@domain.com" required="">
 			</li>
 			<li>
 				<label for="phone">Phone</label>
 				<input id="phone" name="phone" type="tel" placeholder="Eg. +447500000000" required="">
 			</li>
-			<li>
-				<label for="textarea">Textarea</label><br>
-				<textarea id="textarea">Try to resize me to see how popup CSS-based resizing works.</textarea>
-			</li>
+			
 		</ol>
 	</fieldset>
 </form>

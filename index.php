@@ -49,7 +49,7 @@
   <div class="banner-inner container">
     <h1 class="banner-lead">
       <span class="banner-lead-1">shipping the food</span>
-      <span class="banner-lead-2">to the people in need</span>
+      <span class="banner-lead-2">to people in need</span>
     </h1>
     <div class="banner-buttons">
       <a href="#shelter" class="button button-primary">I'm a homeless shelter</a>
@@ -58,7 +58,7 @@
   </div>
 </div>
 
-<div id="menu" class="content-block food-menu-block">
+<div id="about" class="content-block food-menu-block">
   <div class="food-menu-block-inner container">
     <div class="clear">
       <div class="food-menu-content">

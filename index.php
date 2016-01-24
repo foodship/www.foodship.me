@@ -114,7 +114,7 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   echo '<table style="width:100%">
-  <tr><td>Name</td><td>Location</td><td>Food</td><td>Servings</td></tr>';
+  <tr><td class=header>Name</td><td class=header>Location</td><td class=header>Food</td><td class=header>Servings</td></tr>';
 
     while($row = $result->fetch_assoc()) {
       //print_r($row);

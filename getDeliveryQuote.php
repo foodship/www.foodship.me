@@ -60,11 +60,28 @@ $err = curl_error($curl);
 
 curl_close($curl);
 
+
+
 if ($err) {
   echo "cURL Error #:" . $err;
 } else {
   $results = json_decode($response, true);
   echo "Estimated Time of Arrival: " . date("h:i A", strtotime($results["dropoff_eta"]));
+  echo "\nYour order has been processsed.";
+
+   $servername = "sql.foodship.me";
+          $username = "foodship";
+          $password = "djmingudjmingu";
+          $dbname = "foodship";
+          
+  $conn = new mysqli($servername, $username, $password, $dbname);
+            if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
+  }
+
+  $sql = "  UPDATE `restaurants` SET `Ordered` = '1' WHERE `Id` = " . $_GET['id'];
+  $conn->query($sql);
+  $conn->close();
   //echo $response;
 }
 

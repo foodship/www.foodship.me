@@ -157,73 +157,63 @@ $conn->close();
           $people = $_POST['amount'];
           $conn = new mysqli($servername, $username, $password, $dbname);
           if ($conn->connect_error) {
-              die("Connection failed: " . $conn->connect_error);
+            die("Connection failed: " . $conn->connect_error);
           } 
-
-          $sql = "INSERT INTO  `foodship`.`restaurants` (`Id` ,
-`Name` ,
-`Number` ,
-`Restaurant-name` ,
-`Address` ,
-`Food` ,
-`People`
-)
-VALUES (
-NULL , '$name', '$number', '$restaurant_name', '$address', '$food', '$people')";
-if ($conn->query($sql) === TRUE) {
-    echo "<p> Thank you!</p>";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
-
-$conn->close(); } else { echo '
-        <form action="/#restaurant" method="post" class="reservations-form">
-          <fieldset>
-            <legend class="sr">Contact Us</legend>
-            <div class="clear">
-              <div class="col-6-tablet field-group">
-                <label class="block strong" for="name">Your name</label>
-                <input name="name" class="field form-control" id="name" type="text" placeholder="your name *">
-              </div>
-              <div class="col-6-tablet field-group">
-                <label class="block strong" for="number">Phone number</label>
-                <input name="number" class="field form-control" id="number" type="text" placeholder="phone number *">
-              </div>
-              <div class="col-6-tablet field-group">
-                <label class="block strong" for="restaurant-name">Resaurant name</label>
-                <input name="restaurant-name" class="field form-control" id="restaurant-name" type="text" placeholder="restaurant name *">
-              </div>
-              <div class="col-6-tablet field-group">
-                <label class="block strong" for="address">Address</label>
-                <input name="address" class="field form-control" id="address" type="text" placeholder="restaurant address *">
-              </div>
-            </div>
-            <div class="clear">
-              <div class="col-6-tablet field-group">
-                <label class="block strong" for="food">Type of food</label>
-                <input name="food" class="field form-control" id="food" type="text" placeholder="type of food *">
-              </div>
-              <div class="col-6-tablet field-group">
-                <label class="block strong" for="amount">Number of people to feed</label>
-                <span class="select">
-                  <select name="amount" id="amount">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                  </select>
-                </span>
-              </div>
-            </div>
-            <div class="text-center">
-              <input type="submit" class="button reservations-submit" value="Register">
-            </div>
-          </fieldset>
-        </form>
+          $sql = "INSERT INTO  `foodship`.`restaurants` (`Id`, `Name`, `Number`, `Restaurant-name`, `Address`, `Food`, `People`)
+          VALUES (NULL , '$name', '$number', '$restaurant_name', '$address', '$food', '$people')";
+          if ($conn->query($sql) === TRUE) {
+            echo "<p> Thank you!</p>";
+          } else {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+          }
+          $conn->close(); } else { echo '
+            <form action="/#restaurant" method="post" class="reservations-form">
+              <fieldset>
+                <legend class="sr">Contact Us</legend>
+                <div class="clear">
+                  <div class="col-6-tablet field-group">
+                    <label class="block strong" for="name">Your name</label>
+                    <input name="name" class="field form-control" id="name" type="text" placeholder="your name *">
+                  </div>
+                  <div class="col-6-tablet field-group">
+                    <label class="block strong" for="number">Phone number</label>
+                    <input name="number" class="field form-control" id="number" type="text" placeholder="phone number *">
+                  </div>
+                  <div class="col-6-tablet field-group">
+                    <label class="block strong" for="restaurant-name">Resaurant name</label>
+                    <input name="restaurant-name" class="field form-control" id="restaurant-name" type="text" placeholder="restaurant name *">
+                  </div>
+                  <div class="col-6-tablet field-group">
+                    <label class="block strong" for="address">Address</label>
+                    <input name="address" class="field form-control" id="address" type="text" placeholder="restaurant address *">
+                  </div>
+                </div>
+                <div class="clear">
+                  <div class="col-6-tablet field-group">
+                    <label class="block strong" for="food">Type of food</label>
+                    <input name="food" class="field form-control" id="food" type="text" placeholder="type of food *">
+                  </div>
+                  <div class="col-6-tablet field-group">
+                    <label class="block strong" for="amount">Number of people to feed</label>
+                    <span class="select">
+                      <select name="amount" id="amount">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                      </select>
+                    </span>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <input type="submit" class="button reservations-submit" value="Register">
+                </div>
+              </fieldset>
+            </form>
         ';}?>
       </div>
     </div>

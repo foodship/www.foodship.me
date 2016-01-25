@@ -2767,13 +2767,13 @@ img {
   line-height: 20px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  width: 100px;
+  width: 120px;
   display: block;
   background: #79A70A;
   background: linear-gradient(#F70505 0%, #8F0808 100%);
   box shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
   position: absolute;
-  top: 9px; right: -11px;
+  top: 24px; right: -16px;
 }
 .ribbon span::before {
   content: "";

@@ -2773,7 +2773,7 @@ img {
   background: linear-gradient(#F70505 0%, #8F0808 100%);
   box shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
   position: absolute;
-  top: 24px; right: -23px;
+  top: 24px; right: -24px;
 }
 .ribbon span::before {
   content: "";

@@ -28,7 +28,7 @@
 
 
 <div class="banner">
-  <div class="ribbon"><span>PENNAPPS XIII</span></div>
+  <div class="ribbon"><a href="http://devpost.com/software/foodship"></a><span>PENNAPPS XIII</span></a></div>
   <div class="header">
     <div class="header-inner container clear">
       <a class="logo" href="#"><span class="sr">Lambda Logo</span></a>

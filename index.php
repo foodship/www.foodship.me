@@ -28,6 +28,7 @@
 
 
 <div class="banner">
+  <div class="ribbon"><span>POPULAR</span></div>
   <div class="header">
     <div class="header-inner container clear">
       <a class="logo" href="#"><span class="sr">Lambda Logo</span></a>

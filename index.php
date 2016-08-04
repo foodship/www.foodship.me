@@ -18,10 +18,10 @@
   <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="magnific-popup.css">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="jquery.magnific-popup.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/jquery.magnific-popup.js"></script>
 
 </head>
 <body>

@@ -312,16 +312,15 @@ function pass_id() {
       <div class="footer-column col-6-desktop">
         <h3 class="footer-heading">Our Profiles</h3>
         <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/mingzhang2019" data-format="hover" data-related="false" data-text="Ming Zhang"></script>
+        <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/atter" data-format="hover" data-text="Edward Eddie"></script>
         <br>
-        <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/sanjanasarkar" data-format="hover" data-related="false" data-text="Sanjana Sarkar"></script>
+        <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/victoria-huang-7804a7113" data-format="hover" data-text="Victoria Huang"></script>
         <br>
-        <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/abha-vedula-263726111" data-format="hover" data-related="false" data-text="Abha Vedula"></script>
+        <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/sanjanasarkar" data-format="hover" data-text="Sanjana Sarkar"></script>
         <br>
-        <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/victoria-huang-7804a7113" data-format="hover" data-related="false" data-text="Victoria Huang"></script>
+        <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/abha-vedula-263726111" data-format="hover" data-text="Abha Vedula"></script>
+        <br>
+        <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/mingzhang2019" data-format="hover" data-text="Ming Zhang"></script>
       <!--
         <ul class="footer-social-list icon-list-inline">
           <li class="navigation-item-social"><a class="social social-twitter" href="#"><span class="sr">Twitter</span></a></li>

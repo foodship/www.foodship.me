@@ -304,12 +304,6 @@ function pass_id() {
   <div class="footer-inner container">
     <div class="clear">
       <div class="footer-column col-6-desktop">
-        <h3 class="footer-heading">About us</h3>
-        <p>
-          Foodship connects homeless shelter to restaurants donating food. With just a touch of a button, restaurants can ship food to homeless shelters to benefit those in need. No more trudging along in ankle-deep snow.
-        </p>
-      </div>
-      <div class="footer-column col-6-desktop">
         <h3 class="footer-heading">Our Profiles</h3>
         <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
         <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/atter" data-format="hover" data-text="Edward Eddie"></script>
@@ -321,30 +315,13 @@ function pass_id() {
         <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/abha-vedula-263726111" data-format="hover" data-text="Abha Vedula"></script>
         <br>
         <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/mingzhang2019" data-format="hover" data-text="Ming Zhang"></script>
-      <!--
-        <ul class="footer-social-list icon-list-inline">
-          <li class="navigation-item-social"><a class="social social-twitter" href="#"><span class="sr">Twitter</span></a></li>
-          <li class="navigation-item-social"><a class="social social-facebook" href="#"><span class="sr">Facebook</span></a></li>
-          <li class="navigation-item-social"><a class="social social-google-plus" href="#"><span class="sr">Google Plus</span></a></li>
-          <li class="navigation-item-social"><a class="social social-youtube" href="#"><span class="sr">YouTube</span></a></li>
-        </ul>
-      -->
       </div>
-      <!--
-      <div class="footer-column col-4-desktop">
-        <h3 class="footer-heading">Opening Hours</h3>
+      <div class="footer-column col-6-desktop">
+        <h3 class="footer-heading">About us</h3>
         <p>
-          <strong>Mon-Thu:</strong> 7.00am - 8.00pm <br>
-          <strong>Fri-Sun:</strong> 7.00am - 10.00pm
+          Foodship connects homeless shelter to restaurants donating food. With just a touch of a button, restaurants can ship food to homeless shelters to benefit those in need. No more trudging along in ankle-deep snow.
         </p>
-        <ul class="payment-types icon-list-inline">
-          <li><span class="payment payment-mastercard"><span class="sr">Mastercard</span></a></li>
-          <li><span class="payment payment-visa"><span class="sr">Visa</span></span></li>
-          <li><span class="payment payment-american-express"><span class="sr">American Express</span></span></li>
-          <li><span class="payment payment-paypal"><span class="sr">PayPal</span></span></li>
-        </ul>
       </div>
-      -->
     </div>
   </div>
 </div>

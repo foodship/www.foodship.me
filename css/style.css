@@ -517,7 +517,7 @@ h2:after,
   float: none;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(img/divider-gold.svg);
+  background-image: url(/img/divider-gold.svg);
   height: 40px;
   margin-bottom: 20px;
 }
@@ -526,7 +526,7 @@ h2:after,
 }
 .h2-secondary:after {
   content: "";
-  background-image: url(img/divider-white.svg);
+  background-image: url(/img/divider-white.svg);
   height: 35px;
 }
 .divider {
@@ -539,19 +539,19 @@ h2:after,
   margin-right: auto;
 }
 .divider-primary {
-  background-image: url(img/divider-xl-white.svg);
+  background-image: url(/img/divider-xl-white.svg);
   height: 55px;
 }
 .divider-secondary {
-  background-image: url(img/divider-gold.svg);
+  background-image: url(/img/divider-gold.svg);
   height: 40px;
 }
 .divider-third {
-  background-image: url(img/divider-white.svg);
+  background-image: url(/img/divider-white.svg);
   height: 35px;
 }
 .divider-fourth {
-  background-image: url(img/divider-sm-white.svg);
+  background-image: url(/img/divider-sm-white.svg);
   height: 30px;
 }
 .button {
@@ -1640,7 +1640,7 @@ img {
   max-width: 100%;
 }
 .banner {
-  background: url(img/hero-bg.jpg) 0 0 no-repeat;
+  background: url(/img/hero-bg.jpg) 0 0 no-repeat;
   background-size: cover;
   text-align: center;
 }
@@ -1649,7 +1649,7 @@ img {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
-  background-image: url(img/divider-xl-white.svg);
+  background-image: url(/img/divider-xl-white.svg);
   height: 55px;
   float: none;
   margin-left: auto;
@@ -1716,7 +1716,7 @@ img {
 .logo {
   width: 160px;
   height: 95px;
-  background: url(img/logo.svg) 50% 50% no-repeat;
+  background: url(/img/logo.svg) 50% 50% no-repeat;
   display: inline-block;
   float: left;
   -webkit-transition: all 0.3s;
@@ -1863,7 +1863,7 @@ img {
   padding-bottom: 70px;
 }
 .about-block {
-  background: url(img/contemporary-china.png) 0 0 repeat;
+  background: url(/img/contemporary-china.png) 0 0 repeat;
 }
 .about-block .about-block-content {
   padding-left: 30px;
@@ -1913,7 +1913,7 @@ img {
   animation-name: fadeInRight;
 }
 .ingredients-block {
-  background: url(img/ingredients-bg.jpg) 0 0 no-repeat;
+  background: url(/img/ingredients-bg.jpg) 0 0 no-repeat;
   background-size: cover;
 }
 .feature-image-group {
@@ -1989,7 +1989,7 @@ img {
   animation-delay: 0.6s;
 }
 .food-menu-block {
-  background: url(img/cream-pixels.png) 0 0 repeat;
+  background: url(/img/cream-pixels.png) 0 0 repeat;
 }
 .food-menu-list {
   list-style: none;
@@ -2090,7 +2090,7 @@ img {
   animation-name: fadeInLeft;
 }
 .reviews-block {
-  background: url(img/reviews-bg.jpg) 0 50% no-repeat;
+  background: url(/img/reviews-bg.jpg) 0 50% no-repeat;
   background-size: cover;
 }
 .reviews-block.active {
@@ -2134,7 +2134,7 @@ img {
   animation-name: fadeInUp;
 }
 .reservations-block {
-  background: url(img/pw-maze-white.png) 0 0 repeat;
+  background: url(/img/pw-maze-white.png) 0 0 repeat;
 }
 .reservations-block .field {
   border: 1px solid #ccc;
@@ -2217,7 +2217,7 @@ img {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(img/divider-sm-white.svg);
+  background-image: url(/img/divider-sm-white.svg);
   height: 30px;
   margin-top: 20px;
   content: "";

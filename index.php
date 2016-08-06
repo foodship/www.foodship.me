@@ -75,7 +75,7 @@
           <li class="food-menu-item">
             <div class="food-menu-summary">
               <p>
-                We are four Freshmen majoring in Computer Science at the University of Pennsylvania. This is our second time participating in a hackathon.
+                We are five Freshmen majoring in Computer Science at the University of Pennsylvania. PennApps was our second hackathon.
               </p>
             </div>
           </li>
@@ -87,7 +87,7 @@
           <li class="food-menu-item">
             <div class="food-menu-summary">
               <p>
-                Foodship connects homeless shelter to restaurants donating food. With just a touch of a button, restaurants can ship food to homeless shelters to benefit those in need. No more trudging along in ankle-deep snow.
+                Foodship connects homeless shelters to restaurants donating food. With just a touch of a button, restaurants can ship food to homeless shelters to benefit those in need. No more trudging along in ankle-deep snow.
               </p>
             </div>
           </li>

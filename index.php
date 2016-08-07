@@ -306,7 +306,7 @@ function pass_id() {
       <div class="footer-column col-4-desktop">
         <h3 class="footer-heading">Our Profiles</h3>
         <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-        <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/atter" data-format="hover" data-text="Edward Eddie"></script>
+        <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/atter" data-format="hover" data-text="Edward Atter"></script>
         <br>
         <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/victoria-huang-7804a7113" data-format="hover" data-text="Victoria Huang"></script>
         <br>
